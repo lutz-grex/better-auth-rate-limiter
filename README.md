@@ -1,9 +1,9 @@
-# @better-auth/rate-limiter
+# better-auth-rate-limiter
 
-Rate limiter plugin for [Better Auth](https://www.better-auth.com) — rate limit any application route with memory, database, or Redis-backed storage.
+Rate limiter plugin for [Better Auth](https://www.better-auth.com) — rate limit any application route with memory, database, or Redis-backed storage. Community plugin.
 
-[![npm version](https://img.shields.io/npm/v/@better-auth/rate-limiter)](https://www.npmjs.com/package/@better-auth/rate-limiter)
-[![license](https://img.shields.io/npm/l/@better-auth/rate-limiter)](LICENSE)
+[![npm version](https://img.shields.io/npm/v/better-auth-rate-limiter)](https://www.npmjs.com/package/better-auth-rate-limiter)
+[![license](https://img.shields.io/npm/l/better-auth-rate-limiter)](LICENSE)
 
 ## Features
 
@@ -16,10 +16,10 @@ Rate limiter plugin for [Better Auth](https://www.better-auth.com) — rate limi
 
 ## Installation
 
-```bash◊
-npm install @better-auth/rate-limiter
+```bash
+npm install better-auth-rate-limiter
 # or
-pnpm add @better-auth/rate-limiter
+pnpm add better-auth-rate-limiter
 ```
 
 ## Setup
@@ -30,7 +30,7 @@ Add the plugin to your Better Auth instance:
 
 ```typescript
 import { betterAuth } from "better-auth";
-import { rateLimiter } from "@better-auth/rate-limiter";
+import { rateLimiter } from "better-auth-rate-limiter";
 
 export const auth = betterAuth({
   // ...your config
@@ -49,7 +49,7 @@ export const auth = betterAuth({
 
 ```typescript
 import { createAuthClient } from "better-auth/client";
-import { rateLimiterClient } from "@better-auth/rate-limiter/client";
+import { rateLimiterClient } from "better-auth-rate-limiter/client";
 
 export const authClient = createAuthClient({
   plugins: [rateLimiterClient()],
@@ -84,7 +84,7 @@ Use a Redis-compatible store configured via Better Auth's `secondaryStorage` opt
 
 ```typescript
 import { betterAuth } from "better-auth";
-import { rateLimiter } from "@better-auth/rate-limiter";
+import { rateLimiter } from "better-auth-rate-limiter";
 import { Redis } from "ioredis";
 
 const redis = new Redis();
