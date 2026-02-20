@@ -3,6 +3,8 @@
 Rate limiter plugin for [Better Auth](https://www.better-auth.com) — rate limit any application route with memory, database, or Redis-backed storage. Community plugin.
 
 [![npm version](https://img.shields.io/npm/v/better-auth-rate-limiter)](https://www.npmjs.com/package/better-auth-rate-limiter)
+[![npm downloads](https://img.shields.io/npm/dm/better-auth-rate-limiter)](https://www.npmjs.com/package/better-auth-rate-limiter)
+[![CI](https://github.com/lutz-grex/better-auth-rate-limiter/actions/workflows/ci.yml/badge.svg)](https://github.com/lutz-grex/better-auth-rate-limiter/actions/workflows/ci.yml)
 [![license](https://img.shields.io/npm/l/better-auth-rate-limiter)](LICENSE)
 
 ## Features
